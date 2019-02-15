@@ -14,8 +14,8 @@ pipeline {
     environment {
         PROJECT  = 'ios-calc'
         IMAGE    = 'ios-calc:latest'
-        NXURL    = 'https://nexus.red.lab.aonanalytics.com'
-        NXCRED   = 'nx-cicd-jenkins'
+        NXURL    = 'https://registry.red.lab.aonanalytics.com'
+        NXCRED   = 'nx-cicd-deploy'
     }
 
 

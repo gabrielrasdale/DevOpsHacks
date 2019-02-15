@@ -12,8 +12,8 @@ pipeline {
     agent any
 
     environment {
-        PROJECT  = 'ARTIFACTNAME'
-        IMAGE    = 'ARTIFACTNAME:latest'
+        PROJECT  = 'ios-calc'
+        IMAGE    = 'ios-calc:latest'
         NXURL    = 'https://nexus.red.lab.aonanalytics.com'
         NXCRED   = 'nx-cicd-jenkins'
     }

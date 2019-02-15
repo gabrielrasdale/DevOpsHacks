@@ -2,13 +2,10 @@ version: "2.1"
 
 services:
 
-  ARTIFACTNAME:
-    container_name: "ARTIFACTNAME"
-    image: registry.red.lab.aonanalytics.com/ARTIFACTNAME:latest
+  ios-calc:
+    container_name: "ios-calc"
+    image: registry.red.lab.aonanalytics.com/ios-calc:latest
     restart: always
-    command: >-
-      --no-livereload
-      --dev-addr 0.0.0.0:9080
     environment:
       - VIRTUAL_HOST=calc.dev.lab.aonanalytics.com
       - VIRTUAL_PORT=3000

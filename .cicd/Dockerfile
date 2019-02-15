@@ -61,4 +61,4 @@ EXPOSE 3000
 # run the application
 #
 
-CMD [ "node", "." ]
+CMD [ "npm", "start" ]

@@ -17,7 +17,7 @@ services:
     image: registry.red.lab.aonanalytics.com/ios-calc:latest
     restart: always
     environment:
-      - VIRTUAL_HOST=green.dev.lab.aonanalytics.com
+      - VIRTUAL_HOST=green.dev.lab.aonanalytics.com, calc.dev.lab.aonanalytics.com
       - VIRTUAL_PORT=3000
     ports:
       - 3002:3000

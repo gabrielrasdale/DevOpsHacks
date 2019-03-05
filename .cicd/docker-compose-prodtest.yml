@@ -4,7 +4,7 @@ services:
 
   calc:
     container_name: "calc"
-    image: registry.red.lab.aonanalytics.com/ios-calc:v1.0
+    image: registry.red.lab.aonanalytics.com/ios-calc:prodtest
     restart: always
     environment:
       - VIRTUAL_HOST=calc.prodtest.lab.aonanalytics.com

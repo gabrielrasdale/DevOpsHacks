@@ -90,12 +90,12 @@ pipeline {
 
         stage('Conditional deploy to CNODE:prodtest') {
             when {
-                branch 'prodtest'
+                branch 'master'
             }
             environment {
                 CICD_SSH_HOST            = "prodtest"
                 CICD_USER_NAME           = "cicd"
-                CICD_DOCKER_COMPOSE_FILE = "./.cicd/docker-compose-${BRANCH}.yml"
+                CICD_DOCKER_COMPOSE_FILE = "./.cicd/docker-compose-prodtest.yml"
                 CICD_PROJECT_NAME        = "${PROJECT}"
                 CICD_REGISTRY_URL        = "https://registry.red.lab.aonanalytics.com"
                 CICD_REGISTRY_CRED       = credentials('nx-cicd-deploy')

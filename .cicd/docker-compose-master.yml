@@ -21,3 +21,11 @@ services:
       - VIRTUAL_PORT=3000
     ports:
       - 3002:3000
+
+  mark-calc:
+    container_name: "mark-calc"
+    image: registry.red.lab.aonanalytics.com/ios-calc:v1.0
+    restart: always
+    environment:
+      - VIRTUAL_HOST=mark.dev.lab.aonanalytics.com
+      - VIRTUAL_PORT=3000
